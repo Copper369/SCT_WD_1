@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Domino's Pizza Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="img1.png" alt="Domino's Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#">Coupons</a></li>
+      <li><a href="#">Tracker</a></li>
+    </ul>
+    <div class="cart-icon" id="cartMenu">
+      <img src="https://ext.same-assets.com/4140455339/2811625580.svg" alt="Cart">
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </nav>
+  <main class="menu-main">
+    <h1 class="menu-title">Menu</h1>
+    <div class="pizza-grid" id="pizzaGrid">
+      <!-- Pizzas dynamically rendered here -->
+    </div>
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-box">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total">Total: <span id="cartTotal">$0.00</span></div>
+        <button id="closeCart" class="cta-btn">Close</button>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <p>&copy; 2025 Domino's Clone. Visual style & imagery used for educational purposes only.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
